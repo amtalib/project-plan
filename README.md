@@ -13,27 +13,6 @@ Project-Plan is console application written in Java SE created as programming te
 	* task != dependency task
 	* dependency task is not dependent to task
 - The application prints the calculated project plan with task schedules (start and end), and dependencies.
-- Sample output:
-	
-------------------------------------------------------------------------------------------
-# Project Plan for MC-Best
-# Target Start Date: Jul-15
-# Target Completion Date: Sep-25
-
-# Project Tasks
-Task-ID    Start-Date   End-Date     Duration(Days)     Task                           Dependencies (Task-ID)   
-_______    __________   ________     ______________     ___________________________    ______________________   
-102        Jul-15       Jul-20       5                  Project Initiation             
-103        Jul-20       Jul-30       10                 Analysis & Requirements        102
-106        Jul-30       Aug-04       5                  Prepare Test Scripts           102, 103
-104        Jul-30       Aug-09       10                 Design                         102, 103
-110        Aug-09       Aug-13       4                  Infra Setup                    102, 103, 104
-105        Aug-09       Sep-08       30                 Programming                    102, 103, 104
-107        Sep-08       Sep-16       8                  Integration and Testing        102, 103, 104, 105, 106, 110
-109        Sep-16       Sep-22       6                  Users Training & Testing       102, 103, 104, 105, 106, 107
-108        Sep-22       Sep-25       3                  Production Deployment          102, 103, 104, 105, 106, 107, 109
-
-------------------------------------------------------------------------------------------
 	
 	
 # Programming Test Requirements (Given by Albert Factor of iScale Solutions)
@@ -50,6 +29,8 @@ _______    __________   ________     ______________     ________________________
 	- Download the source code to your local repository.
 	- Import to Eclipse IDE.
 	- Run the main method inside ApplicationMain.java
+
+# This program requires Java-SE 1.8
 
 
 
